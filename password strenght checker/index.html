@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Checker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="side">
+          <!-- Sign-up content -->
+          <h2>Sign Up</h2>
+          <br />
+          <input type="text" placeholder="username" id="input1" />
+          <br />
+          <input type="email" placeholder="email" id="input2" />
+          <br />
+          <div class="password-input-box">
+            <input
+              type="password"
+              placeholder="password"
+              class="password-input"
+            />
+            <i class="far fa-eye show-pass"></i>
+            <div class="password-checklist">
+              <h3 class="checklist-title">Password should be</h3>
+              <ul class="checklist">
+                <li class="list-item">At least 8 characters</li>
+                <li class="list-item">At least 1 number</li>
+                <li class="list-item">At least 1 lowercase letter</li>
+                <li class="list-item">At least 1 uppercase letter</li>
+                <li class="list-item">At least 1 special character</li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <input type="password" placeholder="confirm password" id="input4" />
+          <div class="buttons">
+            <br />
+            <button id="flip-card-btn-turn-to-back">Create an account</button>
+          </div>
+          <a href="#" style="color: #7c73c0">Already have an account?</a>
+        </div>
+        <div class="side back">
+          <!-- Login content -->
+          <h2>Log In</h2>
+          <br />
+          <input type="text" placeholder="username" id="input5" />
+          <br />
+          <input type="password" placeholder="password" id="input6" />
+          <i class="far fa-eye show-pass"></i>
 
+          <br />
+          <div class="buttons">
+            <button id="flip-card-btn-turn-to-front">Sign in</button>
+          </div>
+          <a href="#" style="color: #7c73c0">New user?Create an account</a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
