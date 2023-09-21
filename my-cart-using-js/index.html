@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>My Cart</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mycart">My Cart</h2>
+        <div class="cart">
+            <img src="./Rectangle 2.png" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <div class="product-header">
+                    <div class="product-title-container">
+                        <h2 class="product-title">Red T-Shirt</h2>
+                    </div>
+                    <button class="close-button" id="close">&#10005;</button>
+                </div>
+                <pre class="product-price">120$  <del>150$</del></pre>
+            </div>
+            <div class="quantity-control">
+                <button id="decrement">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button id="increment">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
